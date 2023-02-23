@@ -6,51 +6,34 @@
         <meta property="og:url" content="https://viktya.github.io/"/>
         <meta property="og:title" content="Home | Vik's Lair" />
         <meta property="og:site_name" content="Vik's Lair" />
-        <!--meta property="og:image" content="images/freelinelogo.svg" /-->
         <meta property="og:description" content="Everything you make has a meaning." />
 
         <link rel="stylesheet" href="styles/main.css" />
+        <script src="scripts/player.js"></script>
+
         <script src="https://kit.fontawesome.com/9461b09769.js" crossorigin="anonymous"></script>
 
         <link rel="icon" type="image/x-icon" href="images/favicon.ico?" />
         <title>Vik's Lair</title>
 
-        <audio autoplay loop>
-            <source src="audio/mycastletown.mp3" type="audio/mpeg" />
-        </audio>
-        <script>
-            document.querySelector("audio").volume = 0.2
-        </script>
-
         <meta name="viewport" content="width=device-width, initial-scale=1" />        
     </head>
     <body>
         <nav>
+            <audio loop id="player1" src="audio/spacekk.mp3" type="audio/mpeg"></audio>
+            <audio loop id="player2" src="audio/soulkk.mp3" type="audio/mpeg"></audio>
+            <audio loop id="player3" src="audio/bubblegumkk.mp3" type="audio/mpeg"></audio>
+            <audio loop id="player4" src="audio/cruisinkk.mp3" type="audio/mpeg"></audio>
+
+            <button onClick="togglePlay('player1')">1</button>
+            <button onClick="togglePlay('player2')">2</button>
+            <button onClick="togglePlay('player3')">3</button>
+            <button onClick="togglePlay('player4')">4</button>
+        </nav>
+        
+        <article id="home">
             <h1>Vik's Lair</h1>
             <p><strong>My humble place, my sweet home.</strong></p>
-        </nav>
-
-        <article id="home">
-            
-        </article>
-
-        <!--article id="about-me">
-            <h1>ABOUT ME</h1>
-            <h2>So, what do you do?</h2>
-            <p>
-                Well, I'm kind of nobody right now, and clearing the mess I put myself in.
-                I don't have many plans besides from that, I can't focus on many things.
-            </p>
-            <h2>I see... what about your useful skills?</h2>
-            <p>
-                I started as an artist, I went to art school to draw, ended into graphics
-                but it didn't do for me. Thanks to that I learned how to use Adobe's programs
-                and I started drawing with a graphic tablet. Mainly elves, no questions.
-                Then I tried ending my school career with IT, it didn't go well too,
-                bright side: I got the basics. I don't have much on myself and I'm improving that.
-                I found out I can learn pretty fast if I try, so I'm open to stuff.
-            </p>
-        </article-->
-        
+        </article>        
     </body>
 </html>
