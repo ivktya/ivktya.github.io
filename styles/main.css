@@ -1,3 +1,24 @@
+@font-face {
+    font-family: decor;
+    font-weight: normal;
+    font-style: 800;
+    src: url(../fonts/cufisdecor.ttf);
+}
+
+@font-face {
+    font-family: title;
+    font-weight: normal;
+    font-style: 800;
+    src: url(../fonts/february.ttf);
+}
+
+@font-face {
+    font-family: text;
+    font-weight: normal;
+    font-style: 200;
+    src: url(../fonts/monommm.ttf);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,16 +26,52 @@
 }
 
 body {
+    font-family: text;
+    letter-spacing: 0.02em;
     background-color: rgb(80, 20, 120);
     color:violet;
     text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
+    font-family: title;
     color: whitesmoke;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    /* text-transform: uppercase; */
+}
+
+h1 {
+    font-size: 2.8em;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 2.2em;
+    padding: 10px;
+}
+
+h3 {
+    font-size: 1.6em;
+    padding: 10px;
+}
+
+div,
+p {
+    font-size: 1.1em;
+    letter-spacing: 0.02em;
 }
 
 p {
     margin: auto;
     max-width: 560px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--flred);
 }
