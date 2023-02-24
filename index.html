@@ -20,10 +20,12 @@
     </head>
     <body>
         <nav>
-            <audio loop id="player1" src="audio/spacekk.mp3" type="audio/mpeg"></audio>
-            <audio loop id="player2" src="audio/soulkk.mp3" type="audio/mpeg"></audio>
-            <audio loop id="player3" src="audio/bubblegumkk.mp3" type="audio/mpeg"></audio>
-            <audio loop id="player4" src="audio/cruisinkk.mp3" type="audio/mpeg"></audio>
+            <audio loop id="player1" src="audio/spacekk.mp3" preload="metadata" type="audio/mpeg"></audio>
+            <audio loop id="player2" src="audio/soulkk.mp3" preload="metadata" type="audio/mpeg"></audio>
+            <audio loop id="player3" src="audio/bubblegumkk.mp3" preload="metadata" type="audio/mpeg"></audio>
+            <audio loop id="player4" src="audio/cruisinkk.mp3" preload="metadata" type="audio/mpeg"></audio>
+
+            <input type="range" id="slider" min="0" max="100" value="20" step="10">
 
             <button onClick="togglePlay('player1')">1</button>
             <button onClick="togglePlay('player2')">2</button>
