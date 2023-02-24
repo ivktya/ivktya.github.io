@@ -1,23 +1,4 @@
-@font-face {
-    font-family: decor;
-    font-weight: normal;
-    font-style: 800;
-    src: url(../fonts/cufisdecor.ttf);
-}
-
-@font-face {
-    font-family: title;
-    font-weight: normal;
-    font-style: 800;
-    src: url(../fonts/february.ttf);
-}
-
-@font-face {
-    font-family: text;
-    font-weight: normal;
-    font-style: 200;
-    src: url(../fonts/monommm.ttf);
-}
+@import url(attributes.css);
 
 * {
     box-sizing: border-box;
@@ -28,8 +9,8 @@
 body {
     font-family: text;
     letter-spacing: 0.02em;
-    background-color: rgb(80, 20, 120);
-    color:violet;
+    background-color: indianred;
+    color: whitesmoke;
     text-align: center;
 }
 
@@ -73,9 +54,39 @@ p {
 
 a {
     text-decoration: none;
-    color: var(--flred);
 }
 
 button {
-    padding: 10px;
+    padding: 2vw;
+    transition: top 0.4s;
+}
+
+/* Navbar (Sidebar) */
+nav {
+    width: auto;
+    height: 100%;
+    background-color: mediumpurple;
+    transition: top 0.4s;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav input {
+    padding: 1vw;
+    width: 60%; /* clicks are warped */
+}
+
+nav ul {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+nav li {
+    display: block;
+    padding: 1vw; /* look for other measurement units */
 }

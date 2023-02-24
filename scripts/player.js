@@ -21,9 +21,11 @@ function togglePlay(playerId) {
     }
 }
 
+//  Waits for the HTML document to load before executing
 document.addEventListener("DOMContentLoaded", function() {
     let audioPlayers = [];
     let volumeSlider = document.getElementById("slider");
+    // Sets the volume slider to 20 when the page loads
     volumeSlider.value = 20;
   
     // Populate the array audioPlayers with all audio elements
@@ -37,13 +39,21 @@ document.addEventListener("DOMContentLoaded", function() {
         audioPlayers[i].volume = volumeSlider.value / 100;
     }
   
-    // Change volume function for all players
+    // Change volume for all players
     function changeVolume() {
         for (let i = 0; i < audioPlayers.length; i++) {
             audioPlayers[i].volume = volumeSlider.value / 100;
+            audioPlayers[i].getAttribute('start', 20);
         }
     }
   
     // Add event listener to volume slider
     volumeSlider.addEventListener("input", changeVolume);
 });
+
+/*
+// Quando viene cliccato il play, setta i secondi a cui va in loop la canzone, prendendo il parametro dall'html
+function loopTrack(seconds) {
+    let loopTime = seconds;
+
+}*/

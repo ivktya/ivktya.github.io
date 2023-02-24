@@ -20,22 +20,30 @@
     </head>
     <body>
         <nav>
-            <audio loop id="player1" src="audio/spacekk.mp3" preload="metadata" type="audio/mpeg"></audio>
-            <audio loop id="player2" src="audio/soulkk.mp3" preload="metadata" type="audio/mpeg"></audio>
-            <audio loop id="player3" src="audio/bubblegumkk.mp3" preload="metadata" type="audio/mpeg"></audio>
-            <audio loop id="player4" src="audio/cruisinkk.mp3" preload="metadata" type="audio/mpeg"></audio>
-
             <input type="range" id="slider" min="0" max="100" autocomplete="" value="20" step="10">
-
-            <button onClick="togglePlay('player1')">1</button>
-            <button onClick="togglePlay('player2')">2</button>
-            <button onClick="togglePlay('player3')">3</button>
-            <button onClick="togglePlay('player4')">4</button>
+            <ul>
+                <li>
+                    <audio loop id="player1" src="audio/spacekk.mp3" preload="metadata" type="audio/mpeg"></audio>
+                    <button onClick="togglePlay('player1')">1</button>
+                </li>
+                <li>
+                    <audio loop id="player2" src="audio/soulkk.mp3" preload="metadata" type="audio/mpeg"></audio>
+                    <button onClick="togglePlay('player2')">2</button>                   
+                </li>
+                <li>
+                    <audio loop id="player3" src="audio/bubblegumkk.mp3" preload="metadata" type="audio/mpeg"></audio>
+                    <button onClick="togglePlay('player3')">3</button>                   
+                </li>
+                <li>
+                    <audio loop id="player4" src="audio/cruisinkk.mp3" preload="metadata" type="audio/mpeg"></audio>
+                    <button onClick="togglePlay('player4')">4</button>
+                </li>
+            </ul>
         </nav>
-        
         <article id="home">
             <h1>Vik's Lair</h1>
             <p><strong>My humble place, my sweet home.</strong></p>
         </article>        
     </body>
 </html>
+

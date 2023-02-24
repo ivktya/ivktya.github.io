@@ -1,0 +1,22 @@
+/* Fonts */
+@font-face {
+    font-family: decor;
+    font-weight: normal;
+    src: url(../fonts/cufisdecor.ttf);
+}
+
+@font-face {
+    font-family: title;
+    font-weight: normal;
+    src: url(../fonts/february.ttf);
+}
+
+@font-face {
+    font-family: text;
+    font-weight: normal;
+    src: url(../fonts/monommm.ttf);
+}
+
+/* Color Vars */
+
+/* Classes */
