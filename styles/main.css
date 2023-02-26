@@ -1,4 +1,5 @@
 @import url(attributes.css);
+@import url(elements.css);
 
 * {
     box-sizing: border-box;
@@ -8,15 +9,13 @@
 
 body {
     font-family: text;
-    letter-spacing: 0.02em;
-    background-color: indianred;
+    background-color: var(--red3);
     color: whitesmoke;
     text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: title;
-    color: whitesmoke;
 }
 
 h1,
@@ -56,37 +55,72 @@ a {
     text-decoration: none;
 }
 
-button {
-    padding: 2vw;
-    transition: top 0.4s;
-}
-
 /* Navbar (Sidebar) */
 nav {
-    width: auto;
+    width: 120px;
     height: 100%;
-    background-color: mediumpurple;
+    padding: 20px;
+    background-color: var(--red4);
     transition: top 0.4s;
     position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    animation: spin 5s linear infinite;
     align-items: center;
 }
 
 nav input {
-    padding: 1vw;
-    width: 60%; /* clicks are warped */
+    width: 100%;
+    background-color: var(--red1);
 }
 
 nav ul {
-    width: auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
     list-style: none;
 }
 
 nav li {
+    padding-top: 40px;
+    display: grid;
+    align-items: center;
+}
+
+nav button {
+    height: 80px;
+    width: 80px;
     display: block;
-    padding: 1vw; /* look for other measurement units */
+    border-radius: 50%;
+    background-size: 80px 80px;
+    animation: spin 5s linear infinite;
+    background-color: var(--red2);
+    border-color: var(--red1);
+}
+
+.dot {
+    height: 0px;
+    width: 0px;
+    border: 4px solid var(--red4);
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+}
+
+/* Album Arts */
+#button1 {
+    background-image: url(../images/albumart/spacekk.webp);
+}
+
+#button2 {
+    background-image: url(../images/albumart/soulkk.webp);
+}
+
+#button3 {
+    background-image: url(../images/albumart/bubblegumkk.webp);
+}
+
+#button4 {
+    background-image: url(../images/albumart/cruisinkk.webp);
 }

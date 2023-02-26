@@ -51,9 +51,18 @@ document.addEventListener("DOMContentLoaded", function() {
     volumeSlider.addEventListener("input", changeVolume);
 });
 
+
+
 /*
 // Quando viene cliccato il play, setta i secondi a cui va in loop la canzone, prendendo il parametro dall'html
 function loopTrack(seconds) {
     let loopTime = seconds;
 
+}*/
+
+/*
+function loopTrack(player_id, seconds = 0){
+    document.getElementById(player_id).addEventListener("ended", () => {
+        console.log("FINITA CANZONE")
+    });
 }*/

@@ -17,6 +17,22 @@
     src: url(../fonts/monommm.ttf);
 }
 
+/* Animations */
+@keyframes spin {
+    from {
+        transform: rotate(-360deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 /* Color Vars */
+body {
+    --red1: #f19c7c;
+    --red2: #e87c6c;
+    --red3: #d45c6c;
+    --red4: #b14c5c;
+}
 
 /* Classes */

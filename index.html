@@ -23,26 +23,26 @@
             <input type="range" id="slider" min="0" max="100" autocomplete="" value="20" step="10">
             <ul>
                 <li>
-                    <audio loop id="player1" src="audio/spacekk.mp3" preload="metadata" type="audio/mpeg"></audio>
-                    <button onClick="togglePlay('player1')">1</button>
+                    <audio id="player1" src="audio/spacekk.mp3" preload="metadata" type="audio/mpeg"></audio>
+                    <button id="button1" onClick="togglePlay('player1')"></button>
                 </li>
                 <li>
                     <audio loop id="player2" src="audio/soulkk.mp3" preload="metadata" type="audio/mpeg"></audio>
-                    <button onClick="togglePlay('player2')">2</button>                   
+                    <button id="button2" onClick="togglePlay('player2')"></button>                   
                 </li>
                 <li>
                     <audio loop id="player3" src="audio/bubblegumkk.mp3" preload="metadata" type="audio/mpeg"></audio>
-                    <button onClick="togglePlay('player3')">3</button>                   
+                    <button id="button3" onClick="togglePlay('player3')"></button>                   
                 </li>
                 <li>
                     <audio loop id="player4" src="audio/cruisinkk.mp3" preload="metadata" type="audio/mpeg"></audio>
-                    <button onClick="togglePlay('player4')">4</button>
+                    <button id="button4" onClick="togglePlay('player4')"></button>
                 </li>
             </ul>
         </nav>
         <article id="home">
             <h1>Vik's Lair</h1>
-            <p><strong>My humble place, my sweet home.</strong></p>
+            <p>My humble place, my sweet home.</p>           
         </article>        
     </body>
 </html>
