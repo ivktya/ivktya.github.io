@@ -93,7 +93,7 @@ nav button {
     display: block;
     border-radius: 50%;
     background-size: 80px 80px;
-    animation: spin 5s linear infinite;
+    animation: sbin 12s linear infinite;
     background-color: var(--red2);
     border-color: var(--red1);
 }
