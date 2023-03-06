@@ -1,23 +1,35 @@
-let currentlyPlaying = null;
+let nowPlaying = null;
+let nowSpinning = null;
 
-function togglePlay(playerId) {
+function togglePlay(playerId, buttonId) {
     // Get the clicked player on the page
     let player = document.getElementById(playerId);
+    let button = document.getElementById(buttonId);
 
-    if (player.paused && currentlyPlaying == null) {
+    if (player.paused && nowPlaying == null) {
         // If the clicked audio is paused and nothing is playing, play it
         player.play();
-        currentlyPlaying = player;
-    } else if (player.paused && currentlyPlaying !== player) {
-        // If the clicked audio is paused and something is playing, stop that and play it
-        currentlyPlaying.pause();
-        currentlyPlaying.currentTime = 0
+        nowPlaying = player;
+
+        button.classList.add("diskSpin");
+        nowSpinning = button;
+
+    } else if (player.paused && nowPlaying !== player) {
+        // If the clicked audio is paused and something is playing, stop that...
+        nowPlaying.pause();
+        nowPlaying.currentTime = 0
+        nowSpinning.classList.remove("diskSpin");
+        // ...and play the one you selected!
         player.play();
-        currentlyPlaying = player;
+        nowPlaying = player;
+        button.classList.add("diskSpin");
+        nowSpinning = button;
     } else {
          // If the clicked audio is playing, pause it
         player.pause();
-        currentlyPlaying = null;
+        nowPlaying = null;
+        button.classList.remove("diskSpin");
+        nowSpinning = null;
     }
 }
 
