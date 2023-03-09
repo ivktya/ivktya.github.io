@@ -29,10 +29,12 @@
 
 /* Color Vars */
 body {
-    --red1: #f19c7c;
-    --red2: #e87c6c;
-    --red3: #d45c6c;
-    --red4: #b14c5c;
+    --myblack: rgba(0, 0, 0, 70%);
+    --myorange: rgb(156, 99, 66);
+    --myred: rgb(74, 0, 0);
+    --mypurple: rgb(74, 33, 57);
+    --myblue: rgb(49, 49, 99);
+    --mylightblue: rgb(66, 123, 173);
 }
 
 /* Classes */
