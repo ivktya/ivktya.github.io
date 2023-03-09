@@ -22,11 +22,12 @@ function togglePlay(audioId, buttonId) {
     } else if (audio.paused && songPlaying !== audio) {
         // If the clicked audio is paused and something is playing, stop that...
         songPlaying.pause();
-        songPlaying.currentTime = 0
+        songPlaying.currentTime = 0;
 
         diskSpinning.classList.remove("diskSpin");
 
         // ...and play the one you selected!
+        audio.currentTime = 0;
         audio.play();
         songPlaying = audio;
 
