@@ -1,35 +1,51 @@
-let nowPlaying = null;
-let nowSpinning = null;
+let songPlaying = null;
+let diskSpinning = null;
+// let songTitle = "Play Something!";
 
-function togglePlay(playerId, buttonId) {
-    // Get the clicked player on the page
-    let player = document.getElementById(playerId);
+function togglePlay(audioId, buttonId) {
+    // Get the clicked audio on the page
+    let audio = document.getElementById(audioId);
     let button = document.getElementById(buttonId);
 
-    if (player.paused && nowPlaying == null) {
+    if (audio.paused && songPlaying == null) {
         // If the clicked audio is paused and nothing is playing, play it
-        player.play();
-        nowPlaying = player;
+        audio.play();
+        songPlaying = audio;
 
         button.classList.add("diskSpin");
-        nowSpinning = button;
+        diskSpinning = button;
 
-    } else if (player.paused && nowPlaying !== player) {
+        // artist = audio.metadata.artist;
+        // title = audio.metadata.title;
+        // songTitle.innerText = "Now Playing: ${title} by ${artist}";
+
+    } else if (audio.paused && songPlaying !== audio) {
         // If the clicked audio is paused and something is playing, stop that...
-        nowPlaying.pause();
-        nowPlaying.currentTime = 0
-        nowSpinning.classList.remove("diskSpin");
+        songPlaying.pause();
+        songPlaying.currentTime = 0
+
+        diskSpinning.classList.remove("diskSpin");
+
         // ...and play the one you selected!
-        player.play();
-        nowPlaying = player;
+        audio.play();
+        songPlaying = audio;
+
         button.classList.add("diskSpin");
-        nowSpinning = button;
+        diskSpinning = button;
+        
+        // artist = audio.metadata.artist;
+        // title = audio.metadata.title;
+        // songTitle.innerText = "Now Playing: ${title} by ${artist}";
+
     } else {
          // If the clicked audio is playing, pause it
-        player.pause();
-        nowPlaying = null;
+        audio.pause();
+        songPlaying = null;
+
         button.classList.remove("diskSpin");
-        nowSpinning = null;
+        diskSpinning = null;
+
+        // songTitle.innerText = "Play Something!";
     }
 }
 
@@ -73,8 +89,8 @@ function loopTrack(seconds) {
 }*/
 
 /*
-function loopTrack(player_id, seconds = 0){
-    document.getElementById(player_id).addEventListener("ended", () => {
+function loopTrack(audio_id, seconds = 0){
+    document.getElementById(audio_id).addEventListener("ended", () => {
         console.log("FINITA CANZONE")
     });
 }*/
