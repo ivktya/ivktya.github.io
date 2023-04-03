@@ -1,18 +1,12 @@
 /* Fonts */
 @font-face {
-    font-family: decor;
-    font-weight: normal;
-    src: url(../fonts/cufisdecor.ttf);
-}
-
-@font-face {
     font-family: title;
     font-weight: normal;
     src: url(../fonts/february.ttf);
 }
 
 @font-face {
-    font-family: text;
+    font-family: generic;
     font-weight: normal;
     src: url(../fonts/monommm.ttf);
 }
@@ -32,9 +26,12 @@ body {
     --myblack: rgba(0, 0, 0, 70%);
     --myorange: rgb(156, 99, 66);
     --myred: rgb(74, 0, 0);
-    --mypurple: rgb(74, 33, 57);
+    --mypurple: rgb(85, 26, 139);
     --myblue: rgb(49, 49, 99);
-    --mylightblue: rgb(66, 123, 173);
+    --mylblue: rgb(66, 123, 173);
 }
 
 /* Classes */
+.whitetext {
+    color: white;
+}
