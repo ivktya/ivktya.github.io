@@ -9,6 +9,7 @@
 
 body {
     font-family: generic;
+    background-attachment: fixed;
     background-image: url(../images/bg.gif);
     background-color: black;
     color: whitesmoke;
