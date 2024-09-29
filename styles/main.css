@@ -111,6 +111,7 @@ nav {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    overflow: auto;
     z-index: 9998!important;
 }
 
@@ -169,4 +170,28 @@ nav button {
 
 #button4 {
     background-image: url(../images/albumart/kkcruisin.webp);
+}
+
+#button5 {
+    background-image: url(../images/albumart/thecity.webp);
+}
+
+#button6 {
+    background-image: url(../images/albumart/eternacity.webp);
+}
+
+#button7 {
+    background-image: url(../images/albumart/miichannel.webp);
+}
+
+#button8 {
+    background-image: url(../images/albumart/runaway.webp);
+}
+
+#button9 {
+    background-image: url(../images/albumart/byyourside.webp);
+}
+
+#button10 {
+    background-image: url(../images/albumart/winterwind.webp);
 }
