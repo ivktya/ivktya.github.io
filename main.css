@@ -6,6 +6,16 @@
 
 body {
     height: 100vh;
+    margin-right: 120px;
+    overflow: hidden;
+}
+
+img {
+    max-height: 200px;
+}
+img:hover {
+    opacity: 0.8;
+    transition: 300ms;
 }
 
 /* Navbar */
@@ -48,6 +58,7 @@ nav li {
     height: inherit;
     width: 100%;
     padding: 5vh;
+    overflow: scroll;
 }
 
 /* attributes - make new file later */
