@@ -17,11 +17,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const imgcontainer = document.getElementById('gallery');
 
-// var crochet = [];
-
 for (var i=1; i<49; i++) {
     
     img = new Image();
     img.src = `/gallery/crochet/${i}.webp`;
-    imgcontainer.appendChild(img);
+
+    let anchor = document.createElement('a');
+    anchor.setAttribute('href', img.src);
+    anchor.setAttribute('rel', "noopener noreferrer");
+    anchor.setAttribute('target', "_blank");
+    
+    imgcontainer.appendChild(anchor);
+    anchor.appendChild(img);
 }
