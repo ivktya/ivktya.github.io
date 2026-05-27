@@ -51,7 +51,6 @@ nav li {
     color: beige;
     background-color: inherit;
     border-style: hidden;
-
 }
 
 .box {
@@ -59,20 +58,27 @@ nav li {
     width: 100%;
     padding: 5vh;
     overflow: scroll;
+    scrollbar-width: auto;
+    scrollbar-gutter: stable;
 }
 
 /* attributes - make new file later */
 .bg-purple {
     background-color: mediumorchid;
+    scrollbar-color: orchid darkorchid;
 }
 .bg-red {
-    background-color: mediumvioletred;
+    background-color: coral;
+    scrollbar-color: lightsalmon tomato;
+
 }
 .bg-green {
     background-color: mediumseagreen;
+    scrollbar-color: darkseagreen seagreen;
 }
 .bg-blue {
     background-color: mediumslateblue;
+    scrollbar-color: slateblue darkslateblue;
 }
 
 .hidden {
