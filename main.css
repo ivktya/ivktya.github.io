@@ -57,9 +57,14 @@ nav li {
     height: inherit;
     width: 100%;
     padding: 5vh;
-    overflow: scroll;
+    overflow-y: scroll;
+    direction: rtl;
     scrollbar-width: auto;
     scrollbar-gutter: stable;
+}
+
+article div {
+    direction: ltr;
 }
 
 /* attributes - make new file later */
