@@ -178,11 +178,11 @@ img:hover {
 @font-face {
     font-family: title;
     font-weight: normal;
-    src: url(/fonts/starborn.otf);
+    src: url(fonts/starborn.otf);
 }
 
 @font-face {
     font-family: generic;
     font-weight: normal;
-    src: url(/fonts/futurahandwritten.ttf);
+    src: url(fonts/futurahandwritten.ttf);
 }

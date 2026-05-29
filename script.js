@@ -22,7 +22,7 @@ const imgcontainer = document.getElementById('gallery');
 for (var i=1; i<49; i++) {
     
     img = new Image();
-    img.src = `/gallery/crochet/${i}.webp`;
+    img.src = `gallery/crochet/${i}.webp`;
 
     let anchor = document.createElement('a');
     anchor.setAttribute('href', img.src);
