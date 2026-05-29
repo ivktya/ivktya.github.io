@@ -68,6 +68,7 @@ h1 {
     font-size: 52px;
     padding-bottom: 24px;
     padding-left: 20px;
+    color: khaki;
 }
 
 h2 {
@@ -91,6 +92,11 @@ p a {
     text-decoration-line: none;
     border-bottom: 4px dotted khaki;
     padding: 4px;
+}
+
+mark {
+    background-color: khaki;
+    font-style: italic;
 }
 
 hr {
@@ -119,18 +125,45 @@ img:hover {
     background-color: mediumorchid;
     scrollbar-color: orchid darkorchid;
 }
-.bg-red {
-    background-color: coral;
-    scrollbar-color: lightsalmon tomato;
+.bg-purple mark {
+    color: darkorchid;
+}
+.bg-purple hr {
+    border: 2px solid orchid;  
 
 }
+
+.bg-orange {
+    background-color: coral;
+    scrollbar-color: lightsalmon tomato;
+}
+.bg-orange mark {
+    color: tomato;
+}
+.bg-orange hr {
+    border: 2px solid lightsalmon;
+}
+
 .bg-green {
     background-color: mediumseagreen;
     scrollbar-color: darkseagreen seagreen;
 }
+.bg-green mark {
+    color: seagreen;
+}
+.bg-green hr {
+    border: 2px solid darkseagreen;
+}
+
 .bg-blue {
     background-color: mediumslateblue;
     scrollbar-color: slateblue darkslateblue;
+}
+.bg-blue mark {
+    color: darkslateblue;
+}
+.bg-blue hr {
+    border: 2px solid slateblue;
 }
 
 .hidden {
@@ -139,11 +172,6 @@ img:hover {
 
 .golden {
     color: khaki;
-}
-.gmark {
-    background-color: khaki;
-    color: darkorchid;
-    font-style: italic;
 }
 
 /* fonts */

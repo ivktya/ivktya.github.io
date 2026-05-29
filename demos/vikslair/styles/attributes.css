@@ -1,0 +1,37 @@
+/* Fonts */
+@font-face {
+    font-family: title;
+    font-weight: normal;
+    src: url(../fonts/february.ttf);
+}
+
+@font-face {
+    font-family: generic;
+    font-weight: normal;
+    src: url(../fonts/monommm.ttf);
+}
+
+/* Animations */
+@keyframes sbin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Color Vars */
+body {
+    --myblack: rgba(0, 0, 0, 70%);
+    --myorange: rgb(156, 99, 66);
+    --myred: rgb(74, 0, 0);
+    --mypurple: rgb(85, 26, 139);
+    --myblue: rgb(49, 49, 99);
+    --mylblue: rgb(66, 123, 173);
+}
+
+/* Classes */
+.whitetext {
+    color: white;
+}

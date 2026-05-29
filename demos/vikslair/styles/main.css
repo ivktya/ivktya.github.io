@@ -1,0 +1,197 @@
+@import url(attributes.css);
+@import url(elements.css);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: generic;
+    background-attachment: fixed;
+    background-image: url(../images/bg.gif);
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    line-height: 1.5;
+}
+
+main {
+    padding-left: 120px;
+}
+
+article,
+footer {
+    padding-top: 20px;
+    /*padding-left: 120px;*/
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer {
+    margin-top: auto;
+    position: relative;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+    font-family: generic;
+    text-transform: uppercase;
+    background-color: var(--myblack);
+    padding-top: 20px;    
+}
+
+h1,
+h2 {
+    font-family: title;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.8em;
+}
+
+h2 {
+    font-size: 2.4em;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+/* Text */
+p,
+a {
+    letter-spacing: 0.02em;
+    background-color: var(--myblack);
+    padding-top: 10px;
+}
+
+p {
+    max-width: 1200px;
+    color: var(--mylblue);
+}
+
+a {
+    color: violet;
+}
+
+a:hover {
+    color: var(--mypurple);
+}
+
+div {
+    padding: 20px;
+}
+
+mark {
+    color: white;
+    background-color: var(--mypurple);
+}
+
+/* Navbar (Sidebar) */
+nav {
+    width: 120px;
+    height: 100%;
+    padding: 20px;
+    background-color: var(--myblue);
+    transition: top 0.4s;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: auto;
+    z-index: 9998!important;
+}
+
+nav input {
+    width: 100%;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+nav li {
+    padding-top: 40px;
+    display: grid;
+    align-items: center;
+}
+
+nav button {
+    height: 80px;
+    width: 80px;
+    display: block;
+    border-radius: 50%;
+    background-size: 80px 80px;
+    background-color: var(--myblue);
+    border-color: var(--myred);
+}
+
+.diskSpin {
+    animation: sbin 12s linear infinite;
+}
+
+.dot { /* not working as intended*/
+    height: 0px;
+    width: 0px;
+    border: 4px solid var(--myred);
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Album Arts */
+#button1 {
+    background-image: url(../images/albumart/spacekk.webp);
+}
+
+#button2 {
+    background-image: url(../images/albumart/kksoul.webp);
+}
+
+#button3 {
+    background-image: url(../images/albumart/bubblegumkk.webp);
+}
+
+#button4 {
+    background-image: url(../images/albumart/kkcruisin.webp);
+}
+
+#button5 {
+    background-image: url(../images/albumart/thecity.webp);
+}
+
+#button6 {
+    background-image: url(../images/albumart/eternacity.webp);
+}
+
+#button7 {
+    background-image: url(../images/albumart/miichannel.webp);
+}
+
+#button8 {
+    background-image: url(../images/albumart/runaway.webp);
+}
+
+#button9 {
+    background-image: url(../images/albumart/byyourside.webp);
+}
+
+#button10 {
+    background-image: url(../images/albumart/winterwind.webp);
+}
