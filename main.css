@@ -8,14 +8,8 @@ body {
     height: 100vh;
     margin-right: 120px;
     overflow: hidden;
-}
+    color: beige;
 
-img {
-    max-height: 200px;
-}
-img:hover {
-    opacity: 0.8;
-    transition: 300ms;
 }
 
 /* Navbar */
@@ -53,21 +47,74 @@ nav li {
     border-style: hidden;
 }
 
+/* other stuff */
+
 .box {
     height: inherit;
     width: 100%;
-    padding: 5vh;
+    padding: 6vh;
     overflow-y: scroll;
     direction: rtl;
     scrollbar-width: auto;
     scrollbar-gutter: stable;
 }
 
-article div {
+.box div {
     direction: ltr;
 }
 
+h1 {
+    font-family: title;
+    font-size: 52px;
+    padding-bottom: 24px;
+    padding-left: 20px;
+}
+
+h2 {
+    font-family: title;
+    font-size: 36px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+}
+
+p {
+    font-family: generic;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+p a {
+    font-family: title;
+    font-size: 24px;
+    line-height: 40px;
+    color: khaki;
+    text-decoration-line: none;
+    border-bottom: 4px dotted khaki;
+    padding: 4px;
+}
+
+hr {
+    margin: 24px;
+    margin-left: 80px;
+    margin-right: 120px;
+    border: 2px solid orchid;  
+}
+
+img {
+    max-height: 240px;
+    border: 12px ridge orchid;
+    margin: 20px;
+}
+img:hover {
+    opacity: 0.8;
+    transition: 300ms;
+}
+
+
+/* -------------------------------- */
 /* attributes - make new file later */
+/* -------------------------------- */
+
 .bg-purple {
     background-color: mediumorchid;
     scrollbar-color: orchid darkorchid;
@@ -90,16 +137,24 @@ article div {
     display: none;
 }
 
+.golden {
+    color: khaki;
+}
+.gmark {
+    background-color: khaki;
+    color: darkorchid;
+    font-style: italic;
+}
+
 /* fonts */
 @font-face {
     font-family: title;
     font-weight: normal;
-    src: url(/fonts/matcha_cih.otf);
+    src: url(/fonts/starborn.otf);
 }
-/*
+
 @font-face {
     font-family: generic;
     font-weight: normal;
-    src: url(../fonts/monommm.ttf);
+    src: url(/fonts/futurahandwritten.ttf);
 }
-    */
