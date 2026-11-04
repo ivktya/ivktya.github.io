@@ -74,11 +74,12 @@ h1 {
 h2 {
     font-family: title;
     font-size: 36px;
+    padding-top: 24px;
     padding-bottom: 12px;
     padding-left: 12px;
 }
 
-p {
+p, li {
     font-family: generic;
     font-size: 24px;
     line-height: 40px;
@@ -94,6 +95,14 @@ p a {
     padding: 4px;
 }
 
+p, ul {
+    padding-bottom: 12px;
+}
+
+b {
+    color: khaki;
+}
+
 mark {
     background-color: khaki;
     font-style: italic;
@@ -103,23 +112,9 @@ hr {
     margin: 24px;
     margin-left: 80px;
     margin-right: 120px;
-    border: 2px solid orchid;  
 }
 
-img {
-    max-height: 240px;
-    border: 12px ridge orchid;
-    margin: 20px;
-}
-img:hover {
-    opacity: 0.8;
-    transition: 300ms;
-}
-
-
-/* -------------------------------- */
-/* attributes - make new file later */
-/* -------------------------------- */
+/* id or class specific */
 
 .bg-purple {
     background-color: mediumorchid;
@@ -129,8 +124,16 @@ img:hover {
     color: darkorchid;
 }
 .bg-purple hr {
-    border: 2px solid orchid;  
-
+    border: 2px solid orchid;
+}
+#gallery img {
+    max-height: 240px;
+    border: 12px ridge orchid;
+    margin: 20px;
+}
+#gallery img:hover {
+    opacity: 0.8;
+    transition: 300ms;
 }
 
 .bg-orange {
@@ -165,6 +168,25 @@ img:hover {
 .bg-blue hr {
     border: 2px solid slateblue;
 }
+#about-me ul {
+    margin: 24px;
+    margin-left: 80px;
+    margin-right: 120px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#about-me li {
+    width: auto;
+    list-style: none;
+    padding: 12px;
+    border: 2px dotted darkslateblue;
+}
+
+/* -------------------------------- */
+/* attributes - make new file later */
+/* -------------------------------- */
 
 .hidden {
     display: none;
