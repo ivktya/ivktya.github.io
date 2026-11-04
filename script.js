@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const imgcontainer = document.getElementById('gallery');
 
-for (var i=1; i<49; i++) {
+for (var i=78; i>0; i--) {
     
     img = new Image();
     img.src = `gallery/crochet/${i}.webp`;
